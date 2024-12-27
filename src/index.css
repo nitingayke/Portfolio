@@ -1,9 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html{
+  scroll-behavior: smooth;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+}
 body{
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  background-color: #161b1e;
+}
+.home-page-buttons{
+  box-shadow: inset 0px -1px 3px 2px aqua
+}
+
+nav a.button-active {
+  color: rgb(249 115 22);
+  font-weight: bold;
+}
+
+.home-user-image{
+  position: relative;
+}
+.home-user-image::after, .home-user-image::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(#161b1e, #00ffff, #161b1e, #161b1e, #00ffff, #161b1e, #161b1e, #00ffff, #161b1e, #161b1e, #00ffff, #161b1e, #161b1e, #00ffff, #161b1e, #161b1e);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 10px;
+  border-radius: 50%;
+  animation: spin 6s linear infinite reverse;
+}
+.home-user-image::before{
+  opacity: 0.5;
+}
+@keyframes spin {
+  from {
+    rotate: 0deg;
+  } to {
+    rotate: 360deg;
+  }
 }
