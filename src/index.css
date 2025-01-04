@@ -35,7 +35,7 @@ nav a.button-active {
   z-index: -1;
   padding: 10px;
   border-radius: 50%;
-  animation: spin 6s linear infinite reverse;
+  animation: spin 4s linear infinite reverse;
 }
 .home-user-image::before{
   opacity: 0.5;
