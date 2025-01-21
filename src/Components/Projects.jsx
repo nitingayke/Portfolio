@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MoreIcon from '@mui/icons-material/More';
 
 export default function Projects() {

@@ -25,7 +25,7 @@ export default function Contact() {
         e.preventDefault();
 
         const { name, email, message } = inputValues;
-        const phoneNumber = "+919284434042";
+        const phoneNumber = "+919209143657";
 
         const whatsappMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
         const encodedMessage = encodeURIComponent(whatsappMessage);

@@ -35,7 +35,6 @@ function App() {
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
 
-        // Check if the section is within the viewport
         if (rect.top <= 50 && rect.bottom >= 50) {
           currentSectionId = section.getAttribute("id");
         }
@@ -57,10 +56,6 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-
-  }, []);
-
   const DrawerList = (
     <Box sx={{ width: 250 }} onClick={toggleDrawer(false)} >
       <List className="bg-[#161b1e] text-white h-screen overflow-auto">
@@ -78,10 +73,10 @@ function App() {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 text-white p-3 lg:px-0 z-10 w-full transition-colors duration-100 ${isScrolled ? 'bg-[#161b1ee6]' : 'bg-transparent'}`}>
+      <header className={`fixed top-0 left-0 text-white p-3 lg:px-0 z-10 w-full transition-colors duration-100 ${isScrolled ? 'bg-[#4949495c]' : 'bg-transparent'}`}>
         <nav className="flex justify-between items-center lg:w-3/4 mx-auto">
 
-          <h2 className="drop-shadow-lg relative group text-4xl font-semibold  tracking-wider bg-gradient-to-r from-[#00ffff] via-[#00ffff] via-orange-300 to-orange-500 bg-clip-text text-transparent">
+          <h2 className="drop-shadow-lg relative group text-4xl font-semibold tracking-wider bg-gradient-to-r from-[#00ffff] via-[#00ffff] via-orange-300 to-orange-500 bg-clip-text text-transparent">
             NITIN
           </h2>
 
